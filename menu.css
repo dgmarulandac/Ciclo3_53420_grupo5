@@ -1,0 +1,32 @@
+/* Configuraciones generales */
+
+header a:hover{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1em;
+    -webkit-text-stroke: 1.3px rgb(68, 68, 68);
+    -moz-text-stroke: 1.3px rgb(68, 68, 68);
+    -o-text-stroke: 1.3px rgb(68, 68, 68);
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+.logo{
+    transition: transform 1s ease-in-out 0.2s;
+}
+.logo:hover{
+    transform: scale(1.2);
+    box-shadow: none;
+}
+
+@media (max-width: 761px) {
+    .logo:hover{
+        transform: none;
+    }
+}
