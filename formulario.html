@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="\css\estilos.css">
+</head>
+<body>
+   <form method="get" action="">
+    <table cellpadding=5 cellspacing=5 border=1 align="center"> 
+     <th colspan=2>Inscripción sitio web de nuestra tienda virtual</th>
+     <tr>
+       <td><label for="txNombreInter">Nombre interesado: </label></td>
+       <td> <input type="text" id="txNombreInter" size=40 maxlength="30"autofocus></td>
+     </tr>  
+     <tr>
+       <td><label for="txemail">Correo Electronico: </label></td>  
+       <td><input type="email" id="txemail" size=40 maxlength="30"></td>
+     </tr>
+     <tr>
+        <td><label for="txUsuario">Usuario: </label></td>  
+        <td><input type="text" id="txUsuario" size=40 maxlength="8" pattern="[A-Za-z]{1,8}"></td>
+      </tr>
+      <tr>
+        <td><label for="txContra">Contraseña: </label></td>  
+        <td><input type="password" id="txContra" size=40 maxlength="8"></td>
+      </tr>
+      <tr>
+        <th colspan=2><button type="submit" name="btEnviar" >Enviar datos</button></th>
+      </tr>
+      <tr>
+       <th colspan=2><button type="reset" name="btEnviar" >Nuevos datos</button></th>
+      </tr> 
+    <br>
+
+  </form> 
+</body>
+</html>
