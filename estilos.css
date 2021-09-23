@@ -101,3 +101,16 @@ ul {
     align-items: center;
 }
 
+.form_name{
+	width:200px; 
+	float:left; 
+	padding-left:100px;
+	text-align:left;	
+}
+
+#form_nuevo_usuario{
+	text-align:center; 
+	width:800px; 
+	padding-top:50px; 
+	padding-left:200px;
+}
