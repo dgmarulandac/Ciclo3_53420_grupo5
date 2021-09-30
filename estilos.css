@@ -24,6 +24,29 @@ body::-webkit-scrollbar-thumb{
     color: white;
     text-align: center;
 }
+.page-body{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 7rem;
+}
+.page-body-title{
+    color: #579C5E;
+    margin-bottom: 2rem;
+}
+.page-body-info-page{
+    color: #579C5E;
+    font-size: 25px;
+}
+
+.page-body-img-div{
+    margin-top: 5rem;
+}
+
+.page-body-img-div img{
+    height: 600px;
+    border: #38633C solid;
+}
 
 /* Configuraciones de imagenes*/
 .img-center{
@@ -37,13 +60,13 @@ body::-webkit-scrollbar-thumb{
 
 /* Configuraciones de colores de fondo */
 .bg-black{
-    background-color: #111111;
+    background-color: #7BDB84;
 }
 .bg-blue{
     background-color: blue;
 }
 .bg-body{
-    background-color: #ced3ff;;
+    background-color: white;;
 }
 .bg-semitransparent{
     background-color: rgba(0, 0, 0, 0.3);
@@ -74,7 +97,7 @@ body::-webkit-scrollbar-thumb{
     color: blue;
 }
 .text-transparent{
-    color: transparent;
+    color: rgb(19, 18, 18);
 }
 
 /* Configuraciones de margenes */
@@ -93,7 +116,7 @@ section {
 }
 
 button {
-    background-color: gray;
+    background-color: #579C5E;
     
 }
 
