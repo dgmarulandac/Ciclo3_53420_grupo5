@@ -6,23 +6,71 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
 	<link rel="stylesheet" href="./estilos.css">
     <title>REGISTRO A NUESTRA TIENDA</title>
+	<link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
-<form method="post" action="" id="form_nuevo_usuario">
-<p><h1 style="text-align:center; line-height:250px">FORMULARIO DE REGISTRO</h1></p>
-	<p>
-    <div class="form_name">USUARIO:</div> <input type="text" id="dato_nombre_usuario">
-	</p>
- 	<p>
-    <div class="form_name">EDAD:</div>   <input type="number" id="dato_edad_usuario">
-	</p>
-  	<p>
-    <div class="form_name">CONTRASEÑA:</div> <input type="text" id="dato_contrasena">
-  	</p>
-  	<p style="padding-left:250px; padding-top:100px">
-    <input type="submit" id="enviar_registro" value="Enviar Registro">
-  	</p>
-</form>
+	<div class="position-sticky sticky-top mb-3">
+
+        <header class="header">
+          <a href="./index.html"><h1 class="text-transparent">TIENDA VIRTUAL</h1></a>
+        </header>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black" id="horizontal_navbar">
+
+            <a class="logo" href="./index.html" target="_blank" rel="noopener noreferrer">
+                <img src="./img/logo.jpg" alt="Logo Tienda" width="" height="50" id="landing_logo">
+            </a>
+
+           
+           
+            <div id="menu" class="collapse navbar-collapse"></div>
+                <ul class="navbar-nav mr-auto">
+                    <button id="boton_registro_usuario" class="navbar-item" >
+                        <a id="irA_registro _usuario" href="./registro.html" class="nav-link">
+                            REGISTRO
+                        </a>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+
+		<center><form method="get" action="" id="form_nuevo_usuario">
+			<table cellpadding=5 cellspacing=5 border=1 align="center"> 
+			 <th colspan=2>Inscripción sitio web de nuestra tienda virtual</th>
+			 <tr>
+			   <td><label for="txNombreInter">Nombre usuario: </label></td>
+			   <td> <input type="text" id="dato_nombre_usuario" size=40 maxlength="30"autofocus></td>
+			 </tr>  
+			 <tr>
+				<td><label for="txemail">Ingrese edad: </label></td>  
+				<td><input type="number" id="dato_edad_usuario" size=40 maxlength="30"></td>
+			  </tr>
+			 <tr>
+			   <td><label for="txemail">Correo Electronico: </label></td>  
+			   <td><input type="email" id="txemail" size=40 maxlength="30"></td>
+			 </tr>
+			  <tr>
+				<td><label for="txContra">Contraseña: </label></td>  
+				<td><input type="password" id="dato_contrasena" size=40 maxlength="8"></td>
+			  </tr>
+			  <tr>
+				<th colspan=2><button type="submit" name="btEnviar" id="dato_contrasena" >Enviar datos</button></th>
+			  </tr>
+			  <tr>
+			   <th colspan=2><button type="reset" name="btEnviar" >Nuevos datos</button></th>
+			  </tr> 
+			<br>
+		
+		  </form> 
+		  </center>
+
+
+		
+
+    </div>
+
 
     
     
