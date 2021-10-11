@@ -1,10 +1,17 @@
 function validar_nombre_usuario(string){
     //validar solo letras A a la Z y espacios, validar que no inicie ni termine con espacios, validar que cada letra despues del espacio sea mayuscula//
-    var x=document.f.name.value;  
-    return /^[A-z ]+$/.test(x);
+    const expresiones = {
+        nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+    }
+    const campos = {
+        nombre: false,
+    }
+    const validarFormulario = (e) => {
+        switch (e.target.name) {
+            case "nombre":
+                validarCampo(expresiones.nombre, e.target, 'nombre');
+            break;  
     
-    
-
 function validar_edad_usuario(edad){
 
 }
