@@ -11,12 +11,14 @@ function todos(nombre,edad,contrasena){
     validar_contrasena(contrasena);
    
     error.innerHTML=mensajesError.join(' - ');
+    console.log(mensajesError)
     if(mensajesError.length == 1){ 
         mensaje.innerHTML="";
     }
 	if(mensajesError.length == 0){ 
         mensaje.innerHTML="INGRESO DATOS FINALIZADO";
     } 
+    mensajesError=0;
     return false;
 }
 
