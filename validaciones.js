@@ -1,14 +1,17 @@
 function validar_nombre_usuario(string){
     //validar solo letras A a la Z y espacios, validar que no inicie ni termine con espacios, validar que cada letra despues del espacio sea mayuscula//
-
-    const validación = (e) => {
-        e.preventDefault();
-        const nombreDeUsuario = document.getElementById('usuario');
-        if (usuario.value === "") {
-          alert("Por favor, escribe tu nombre de usuario.");
-          usuario.focus();
-          return false;
-}
+    var x=document.f.name.value;  
+    return /^[A-z ]+$/.test(x);
+    if(expresion.test(string)==true){
+        if(string.length){
+            return false;
+        }
+        return true;
+    
+    }else{
+        return false;
+    }
+    
 
 function validar_edad_usuario(edad){
 
