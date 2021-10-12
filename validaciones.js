@@ -11,18 +11,34 @@ function todos(nombre,edad,contrasena){
     validar_contrasena(contrasena);
    
     error.innerHTML=mensajesError.join(' - ');
-    console.log(mensajesError)
+    console.log(nombre.value[0])
     if(mensajesError.length == 1){ 
         mensaje.innerHTML="";
     }
 	if(mensajesError.length == 0){ 
         mensaje.innerHTML="INGRESO DATOS FINALIZADO";
     } 
-    mensajesError=0;
+    //mensajesError=0;
     return false;
 }
 
 function validar_nombre_usuario(string){
+    var exprEspacios = /^[^<\s][a-zA-Z\s][^>\s]/;
+    var exprNombre = /[a-zA-Z][ \t\r\n\f]/;
+    var exprMayusculas = /^[A-Z]/;
+
+    if (!exprNombre.test(nombre.value)) {
+        mensajesError.push('Debe ingresar nombres con un espacio');
+    }
+    else if (!exprEspacios.test(nombre.value)) {
+        mensajesError.push('Tiene espacios al inicio y al final');
+    }
+
+    else if (nombre.value[0]==exprMayusculas){
+        mensajesError.push('Debe ingresar mayuscula en cada palabra');
+    }
+
+
     //validar solo letras A a la Z y espacios, validar que no inicie ni termine con espacios, validar que cada letra despues del espacio sea mayuscula//
     /*const expresiones = {
         nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
@@ -63,6 +79,9 @@ function validar_contrasena(string){
     } 
     else if(!expresion.test(contrasena.value)){
         mensajesError.push('No ingresa datos validos, contraseña');
+    }
+    else if (contrasena.value.length < 6) {
+        mensajesError.push('La contraseña tiene menos de 6 caracteres');
     }
     
     /*if(expresion.test(string)==true){
